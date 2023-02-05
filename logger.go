@@ -40,6 +40,6 @@ func (logger Logger) Trace(message string) {
 
 func (logger Logger) Info(message string) {
 	if logger.Level == INFO || logger.Level == DEBUG || logger.Level == TRACE {
-		log.Printf("\x1b[1;54m [%s] \x1b[0m  : %s", "INFO", message)
+		log.Printf("\x1b[1;94m [%s] \x1b[0m  : %s", "INFO", message)
 	}
 }
